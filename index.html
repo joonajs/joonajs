@@ -1,8 +1,112 @@
- <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>joona.studio/README.md</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script>
+        function updateTime() {
+            const now = new Date();
+            const options = {
+            hour: '2-digit',
+            minute: '2-digit',
+            second: '2-digit',
+            millisecond: '2-digit',
+            hour12: false,
+            timeZone: 'Europe/Moscow',
+            timeZoneName: 'short'
+            };
+            const timeString = now.toLocaleTimeString('en-US', options);
+            const dateString = now.toLocaleDateString('en-US', { timeZone: 'Europe/Moscow' });
+            document.getElementById('current-time').textContent = `${dateString} ${timeString}`;
+        }
+        setInterval(updateTime, 1000);
+
+        window.addEventListener("load", function () {
+            const loader = document.querySelector('.loader');
+            setTimeout(() => {
+            loader.classList.add('fade-out');
+            }, 1000);
+        });
+    </script>
+</head>
 <body>
+    <div class="loader">
+        <img src="https://avatars.githubusercontent.com/u/120080578?v=4" alt="Profile Image" class="loader-image">
+    </div>
 
-<h1>joona.studio</h1>
+     
 
+    <div class="container">
+
+         <div class="header">
+            <p><span id="current-time"></span></p>
+        </div>
+
+        <div class="content-section">
+            <header>
+                <a href="#">joona.studio/README.md</a>
+            </header>
+
+            <section class="intro">
+                <p>hey there :)</p>
+                <p>my name is joona and I excel at both user experience design and web development, always striving to create sleek, modern software that works seamlessly and feels amazing to use.</p>
+            </section>
+
+            <section class="highlighted">
+                <blockquote>always <span>building something new</span> (and breaking stuff)</blockquote>
+                <blockquote>fan of <span>special beers</span> and dogs</blockquote>
+                <blockquote>love mountain biking</blockquote>
+            </section>
+
+            <section class="contact">
+                <p>If you're looking to collaborate on something exciting, or just want to chat, let's connect!</p>
+                <p>You can reach me at my email at <a href="mailto:joonajs@proton.me">joonajs@proton.me</a></p>
+            </section>
+
+            <section class="contact-form">
+                <h3>Contact Me</h3>
+                <span>
+                <form>
+                    <label for="name">Name:</label> <br>
+                    <input type="text" id="name" name="name" required><br>
+
+                    <label for="email">Email:</label> <br>
+                    <input type="email" id="email" name="email" required><br>
+
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" required></textarea><br>
+
+                    <button type="submit">Send</button>
+                </span>
+                </form>
+            </section>
+
+            <section class="skills">
+               <strong><p>Skills & Expertise</p></strong> 
+                <ul>
+                    <li><strong>Frontend Development:</strong> React.js, Tailwind CSS, HTML, CSS</li>
+                    <li><strong>UI/UX Design:</strong> Figma, Webflow</li>
+                    <li><strong>Database:</strong> Supabase, MongoDB, Firebase</li>
+                </ul>
+            </section>
+            
+            <section class="projects">
+              <strong><p>Projects</p></strong>  
+                <ul>
+                    <li><a href="#">👷 Adding these soon...</a> – Under construction</li>
+                </ul>
+            </section>
+        </div>
+            
+
+            <footer>
+                ❤️👨‍💻 joonajs
+            </footer>
+        </div>
+
+    </div>
 </body>
-</html> 
+</html>
