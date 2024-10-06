@@ -14,3 +14,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         contactForm.classList.toggle('active');
     });
 
+    function sendEmail() {
+        document.getElementById('sending-animation').style.display = 'block';
+        setTimeout(() => {
+            alert('Email Sent Successfully!');
+            document.getElementById('sending-animation').style.display = 'none';
+        }, 3000);
+    }
