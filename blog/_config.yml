@@ -22,10 +22,11 @@ exclude:
   - README.md
 
 sass:
-  sass_dir: _sass
+  sass_dir: blog
   style: compressed
   include_paths:
-    - _sass
+    - blog/_sass
+
 
 # Google Analytics (Optional)
 # Uncomment and replace to enable tracking
