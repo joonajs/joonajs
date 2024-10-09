@@ -21,15 +21,9 @@ exclude:
   - LICENSE.md
   - README.md
 
-  include:
-  - blog/_sass
-
-
 sass:
-  sass_dir: blog
+  sass_dir: _sass
   style: compressed
-  include_paths:
-    - blog/_sass
 
 
 # Google Analytics (Optional)
