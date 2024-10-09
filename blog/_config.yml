@@ -54,7 +54,7 @@ exclude:
 permalink: /:categories/:title/
 
 # Paths for output
-destination: "../docs/blog" # Outputs generated site to the docs folder, to match GitHub Pages structure
+destination: "../blog" # Outputs generated site to the blog folder
 
 # Enable drafts (if needed)
 include:
