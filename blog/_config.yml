@@ -23,7 +23,10 @@ exclude:
 
 sass:
   sass_dir: _sass
-  style: :compressed
+  style: compressed
+  include_paths:
+    - _sass
+
 
 # Options
 
@@ -46,3 +49,5 @@ nav:
 
   - title: About
     url: /about
+
+paginate_path: "/baseurl/page:num/"
