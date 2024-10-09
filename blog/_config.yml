@@ -21,6 +21,10 @@ exclude:
   - LICENSE.md
   - README.md
 
+  include:
+  - blog/_sass
+
+
 sass:
   sass_dir: blog
   style: compressed
