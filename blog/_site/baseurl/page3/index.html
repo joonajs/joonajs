@@ -15,18 +15,21 @@
   <link rel="shortcut icon" href="/blog/assets/favicon.ico">
   <link rel="alternate" type="application/atom+xml" title="Dark Poole" href="/blog/atom.xml">
 
-  <!-- Begin Jekyll SEO tag v2.6.1 -->
-<meta name="generator" content="Jekyll v4.3.4" />
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v3.10.0" />
 <meta property="og:title" content="Home" />
 <meta name="author" content="Mark Otto" />
 <meta property="og:locale" content="en_US" />
-<link rel="canonical" href="http://localhost:4000/blog/page3/" />
-<meta property="og:url" content="http://localhost:4000/blog/page3/" />
+<link rel="canonical" href="http://localhost:4000/blog/baseurl/page3/" />
+<meta property="og:url" content="http://localhost:4000/blog/baseurl/page3/" />
 <meta property="og:site_name" content="Dark Poole" />
-<link rel="prev" href="http://localhost:4000/blog/page2" />
-<link rel="next" href="http://localhost:4000/blog/page4" />
+<meta property="og:type" content="website" />
+<link rel="prev" href="http://localhost:4000/blog/baseurl/page2/" />
+<link rel="next" href="http://localhost:4000/blog/baseurl/page4/" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Home" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/blog/page3/","@type":"WebPage","author":{"@type":"Person","name":"Mark Otto"},"headline":"Home","@context":"https://schema.org"}</script>
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Mark Otto","url":"https://twitter.com/mdo"},"headline":"Home","url":"http://localhost:4000/blog/baseurl/page3/"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -109,10 +112,10 @@
 <figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="c1">// Example can be run directly in your JavaScript console</span>
 
 <span class="c1">// Create a function that takes two arguments and returns the sum of those arguments</span>
-<span class="kd">var</span> <span class="nx">adder</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Function</span><span class="p">(</span><span class="dl">"</span><span class="s2">a</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">b</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">return a + b</span><span class="dl">"</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">adder</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Function</span><span class="p">(</span><span class="dl">"</span><span class="s2">a</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">b</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">return a + b</span><span class="dl">"</span><span class="p">);</span>
 
 <span class="c1">// Call the function</span>
-<span class="nf">adder</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">);</span>
+<span class="nx">adder</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">);</span>
 <span class="c1">// &gt; 8</span></code></pre></figure>
 
 <p>You may also optionally show code snippets with line numbers. Add <code class="language-plaintext highlighter-rouge">linenos</code> to the Rouge tags.</p>
@@ -128,10 +131,10 @@
 </pre></td><td class="code"><pre><span class="c1">// Example can be run directly in your JavaScript console</span>
 
 <span class="c1">// Create a function that takes two arguments and returns the sum of those arguments</span>
-<span class="kd">var</span> <span class="nx">adder</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Function</span><span class="p">(</span><span class="dl">"</span><span class="s2">a</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">b</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">return a + b</span><span class="dl">"</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">adder</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Function</span><span class="p">(</span><span class="dl">"</span><span class="s2">a</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">b</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">return a + b</span><span class="dl">"</span><span class="p">);</span>
 
 <span class="c1">// Call the function</span>
-<span class="nf">adder</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">);</span>
+<span class="nx">adder</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">);</span>
 <span class="c1">// &gt; 8</span>
 </pre></td></tr></tbody></table></code></pre></figure>
 
@@ -141,7 +144,6 @@
 
 <p>Vestibulum id ligula porta felis euismod semper. Nullam quis risus eget urna mollis ornare vel eu leo. Donec sed odio dui.</p>
 
-<noscript><pre>400: Invalid request</pre></noscript>
 <script src="https://gist.github.com/13f94b734a4ddb132735.js?file=gist.md"> </script>
 
 <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Vestibulum id ligula porta felis euismod semper.</p>
@@ -245,12 +247,12 @@
 
 <div class="pagination">
   
-    <a class="pagination-item older" href="/blog/page4">Older</a>
+    <a class="pagination-item older" href="/blog/baseurl/page4/">Older</a>
   
   
   <a
   class="pagination-item newer"
-  href="/blog/page2"
+  href="/blog/baseurl/page2/"
   >Newer</a
 >
   
@@ -261,7 +263,7 @@
       <footer class="footer">
         <small>
           &copy;
-          <time datetime="2024-10-09T11:51:06+03:00"
+          <time datetime="2024-10-09T12:01:57+03:00"
             >2024</time
           >. All rights reserved.
         </small>

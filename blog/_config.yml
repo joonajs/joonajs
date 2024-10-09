@@ -1,9 +1,9 @@
 # Setup
 title: Dark Poole
 url: https://getpoole.com
-paginate: 1
 baseurl: "/blog"
-permalink: pretty
+paginate: 1
+permalink: /blog/:title/
 
 # Gems
 plugins:
@@ -27,27 +27,26 @@ sass:
   include_paths:
     - _sass
 
-
-# Options
-
-# Replace this value and uncomment to enable Google Analytics tracking
+# Google Analytics (Optional)
+# Uncomment and replace to enable tracking
 # ga_analytics: UA-000000-0
 
-# Specify the author for blog posts
+# Author details
 author:
   name: Mark Otto
   url: https://twitter.com/mdo
   email: markdotto@gmail.com
 
-# Custom vars
+# Custom variables
 version: 3.0.0
 
-# Navbar page list
+# Navbar page list (relative to /blog/)
 nav:
   - title: Blog
-    url: /archive
+    url: /blog/archive
 
   - title: About
-    url: /about
+    url: /blog/about
 
-paginate_path: "/baseurl/page:num/"
+# Pagination path under /blog/
+paginate_path: "/blog/page:num/"
