@@ -53,9 +53,6 @@ exclude:
 # Ensure the URL and baseurl are correctly set so that the blog renders properly in the /blog path
 permalink: /:categories/:title/
 
-# Paths for output
-destination: "../blog" # Outputs generated site to the blog folder
-
 # Enable drafts (if needed)
 include:
   - "_drafts"
