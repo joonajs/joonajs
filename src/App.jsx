@@ -23,13 +23,13 @@ useEffect(() => {
 
 
   return (
-      <div className="font-sans text-black bg-[#fcfcfce6]">
+      <div className="font-sans font-medium text-black bg-[#fcfcfce6]">
           <Navigation />
           <main className="mt-20 p-6 min-w-full left-1/2 -transform-x-1/2 mx-auto lg:grid lg:grid-cols-6 lg:gap-6 max-w-[1920px] overflow-hidden">
               <div className="lg:col-span-4 lg:pr-10 px-5 py-5 rounded-3xl border bg-white">
                   <section id="about" className="mb-4 max-w-4xl ">
                       <h1 className="text-2xl rounded-3xl w-fit font-bold mb-2">About Me</h1>
-                      <p className="leading-relaxed text-sm">
+                      <p className=" text-lg leading-tight">
                           Hey there! My name is Joona and I'm a 3rd-year Information Technology student at Vaasa University of Applied Sciences, majoring in software development. I'm interested in everything technology-related, with a passion for UI/UX and design aswell. You should also check out my
                           <a target="_blank" href="https://www.github.com/joonajs" className="text-blue-500 hover:underline"> GitHub </a>
                           where I have some of my personal projects, as well as my
@@ -37,42 +37,38 @@ useEffect(() => {
                           where I have some of my school projects.
                       </p>
                   </section>
-                  <section id="projects" className="mb-4 max-w-3xl text-sm">
+                  <section id="projects" className="mb-4 max-w-3xl text-lg leading-tight">
                       <h2 className="text-2xl rounded-3xl w-fit font-bold mb-2">Projects</h2>
                       <p className="mb-2">Small list of some projects I have done, will be updating this in the future.</p>
                       <div className="space-y-2">
                           <div>
-                              <h3 className="text-sm font-semibold">Magic Bin</h3>
-                              <p>Magic Bin was made as the final project for my school course in React development. In it, a user can type a 1000 character text-bin to be stored and you get a token you can share to other users to retrieve.</p>
+                              <p><strong>Magic Bin</strong> was made as the final project for my school course in React development. In it, a user can type a 1000 character text-bin to be stored and you get a token you can share to other users to retrieve.</p>
                               <a href="https://w81-magicbin.web.app/" className="text-blue-500 hover:underline">View Project</a>
                           </div>
                           <div>
-                              <h3 className="text-sm font-semibold">Sorter</h3>
-                              <p>A straightforward web app that helps users organize text documents by sorting their content alphabetically.</p>
+                              <p><strong>Sorter</strong> is a straightforward web app that helps users organize text documents by sorting their content alphabetically.</p>
                               <a href="https://github.com/joonajs/sorter/" className="text-blue-500 hover:underline">View Project</a>
                           </div>
                           <div>
-                              <h3 className="text-sm font-semibold">XTemps</h3>
-                              <p>XTemps is a temporary file server built for quick file sharing. It combines a Flask backend with a React frontend, allowing users to spin up a local server for ephemeral file transfers.</p>
+                              <p><strong>XTemps</strong> is a temporary file server built for quick file sharing. It combines a Flask backend with a React frontend, allowing users to spin up a local server for ephemeral file transfers.</p>
                               <a href="https://github.com/joonajs/xtfs" className="text-blue-500 hover:underline">View Project</a>
                           </div>
                           <div>
-                              <h3 className="text-sm font-semibold">HRMA</h3>
-                              <p>Hotel Room Management Application, in which users can log in or sign up and book hotel rooms, manage them, etc. Made for DevOps -course as a Final Project, albeit the focus was on CI/CD and Docker.</p>
+                              <p><strong>HRMA</strong> is a Hotel Room Management Application, in which users can log in or sign up and book hotel rooms, manage them, etc. Made for DevOps -course as a Final Project, albeit the focus was on CI/CD and Docker.</p>
                               <a href="https://gitlab.com/joonajs/devops-finalproject" className="text-blue-500 hover:underline">View Project</a>
                           </div>
                       </div>
                   </section>
                   <section id="design" className="mb-4 max-w-3xl ">
             <h2 className="text-2xl rounded-3xl w-fit font-bold mb-2">Design</h2>
-            <p className=" leading-relaxed text-sm">
-           As much as I love developing software and programming, I also have a passion for design. I have experience in creating user interfaces and user experiences for web applications, mobile applications, and websites. I have a strong understanding of design principles and I always strive to create visually appealing and user-friendly interfaces. You can view my work on <a href="https://www.behance.net/joonajs" className="text-blue-500 hover:underline">Behance</a> as well as <a href="https://www.x.com/joona_js" className="text-blue-500 hover:underline text-xs">X</a>.
+            <p className="text-lg leading-tight">
+           As much as I love developing software and programming, I also have a passion for design. I have experience in creating user interfaces and user experiences for web applications, mobile applications, and websites. I have a strong understanding of design principles and I always strive to create visually appealing and user-friendly interfaces. You can view my work on <a href="https://www.behance.net/joonajs" className="text-blue-500 hover:underline">Behance</a> as well as <a href="https://www.x.com/joona_js" className="text-blue-500 hover:underline">X</a>.
 
             </p>
               
 
           </section>
-          <section id="contact" className="lg:mb-0 mb-10 text-sm">
+          <section id="contact" className="lg:mb-0 mb-10 text-lg leading-tight">
                       <h2 className="text-2xl rounded-3xl w-fit font-bold mb-2  ">Contact</h2>
                       <p>
                           Feel free to reach out to me via email at 
