@@ -1,12 +1,33 @@
+import { useState, useEffect } from "react";
 import Navigation from "./components/Navigation/Navigation";
+import { ArrowUp } from "lucide-react";
 
 function App() {
+const [scrolled, setScrolled] = useState(false);
+
+const handleScroll = () => {
+    if (window.scrollY > 50) {
+        setScrolled(true);
+    } else {
+        setScrolled(false);
+    }
+};
+
+useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+        window.removeEventListener("scroll", handleScroll);
+    };
+}, []);
+
+
+
   return (
       <div className="font-sans text-black bg-[#fcfcfce6]">
           <Navigation />
           <main className="mt-20 p-6 min-w-full left-1/2 -transform-x-1/2 mx-auto lg:grid lg:grid-cols-6 lg:gap-6 max-w-[1920px] overflow-hidden">
               <div className="lg:col-span-4 lg:pr-10 px-5 py-5 rounded-3xl border bg-white">
-                  <section id="about" className="mb-4 max-w-3xl ">
+                  <section id="about" className="mb-4 max-w-4xl ">
                       <h1 className="text-2xl rounded-3xl w-fit font-bold mb-2">About Me</h1>
                       <p className="leading-relaxed text-sm">
                           Hey there! My name is Joona and I'm a 3rd-year Information Technology student at Vaasa University of Applied Sciences, majoring in software development. I'm interested in everything technology-related, with a passion for UI/UX and design aswell. You should also check out my
@@ -62,14 +83,14 @@ function App() {
                   </section>
               </div>
          {/* Image section */}
-         <div className="lg:col-span-2 space-y-4 lg:mt-0 mt-2">
+         <div className="lg:col-span-2 space-y-4 lg:mt-0 mt-2 min-w-full">
             <div className="relative">
               <img
                 src="demoapp.svg"
                 alt="A design for Mobile Application"
-                className="rounded-3xl max-w-fit border object-cover"
+                className="rounded-3xl border object-cover opacity-50 hover:opacity-100 hover:cursor-pointer transition-all"
               />
-              <p className="text-xs text-left max-w-56 text-neutral-400 mt-2">
+              <p className="text-xs text-left max-w-lg text-neutral-400 mt-2">
                 A design prototype for a payment mobile application made in an evening with Figma.
               </p>
             </div>
@@ -89,6 +110,45 @@ function App() {
 
                 </div>
               </footer>
+
+        <div className="lg:grid lg:grid-cols-6 lg:gap-6 max-w-[1920px] overflow-hidden p-5">
+            <div className="lg:col-span-4 space-y-4 lg:mt-0 mt-2 min-w-full">
+                <div className="relative">
+                <img
+                    src="MagicBin.png"
+                    alt="A design for Mobile Application"
+                    className="rounded-3xl border-0 hover:border-opacity-100 object-cover opacity-10 invert hover:invert-0 hover:opacity-100 hover:cursor-pointer transition-all "
+                />
+                <p className="text-xs text-left max-w-lg text-neutral-400 mt-2">
+                Magic Bin was made as the final project for my school course in React development. In it, a user can type a 1000 character text-bin to be stored and you get a token you can share to other users to retrieve.
+                </p>
+                </div>
+            </div>
+            <div className="lg:col-span-2 space-y-4 lg:mt-0 mt-2 min-w-full">
+                <div className="relative">
+                <img
+                    src="Sorter.png"
+                    alt="A design for Mobile Application"
+                    className="rounded-3xl border object-cover opacity-5 hover:opacity-100 transition-opacity hover:cursor-pointer"
+                />
+                <p className="text-xs text-left max-w-lg text-neutral-400 mt-2">
+                A straightforward web app that helps users organize text documents by sorting their content alphabetically. Aesthetically, not very pleasing.
+                </p>
+                </div>
+            </div>
+        </div>
+
+        <div className="fixed bottom-0 right-0 p-4">
+        <button
+    className={`bg-white border bg-opacity-90 hover:bg-neutral-100 text-black font-bold p-2 rounded-3xl 
+                transform transition-transform duration-300 ease-out 
+                ${scrolled ? "scale-125 opacity-100" : "scale-0 opacity-0"}`}
+    onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+>
+    <ArrowUp size={24} />
+</button>
+
+        </div>
       </div>
   );
 }
