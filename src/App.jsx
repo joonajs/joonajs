@@ -4,7 +4,7 @@ function App() {
   return (
       <div className="font-sans text-black bg-[#fcfcfce6]">
           <Navigation />
-          <main className="mt-20 p-6 min-w-full lg:grid lg:grid-cols-6 lg:gap-6 max-w-[1920px]">
+          <main className="mt-20 p-6 min-w-full left-1/2 -transform-x-1/2 mx-auto lg:grid lg:grid-cols-6 lg:gap-6 max-w-[1920px] overflow-hidden">
               <div className="lg:col-span-4 lg:pr-10 px-5 py-5 rounded-3xl border bg-white">
                   <section id="about" className="mb-4 max-w-3xl ">
                       <h1 className="text-2xl rounded-3xl w-fit font-bold mb-2">About Me</h1>
@@ -42,7 +42,7 @@ function App() {
                           </div>
                       </div>
                   </section>
-                  <section id="design" className="mb-4 ">
+                  <section id="design" className="mb-4 max-w-3xl ">
             <h2 className="text-2xl rounded-3xl w-fit font-bold mb-2">Design</h2>
             <p className=" leading-relaxed text-sm">
            As much as I love developing software and programming, I also have a passion for design. I have experience in creating user interfaces and user experiences for web applications, mobile applications, and websites. I have a strong understanding of design principles and I always strive to create visually appealing and user-friendly interfaces. You can view my work on <a href="https://www.behance.net/joonajs" className="text-blue-500 hover:underline">Behance</a> as well as <a href="https://www.x.com/joona_js" className="text-blue-500 hover:underline text-xs">X</a>.
@@ -66,7 +66,7 @@ function App() {
             <div className="relative">
               <img
                 src="demoapp.svg"
-                alt="Abstract gradient animation"
+                alt="A design for Mobile Application"
                 className="rounded-3xl max-w-fit border object-cover"
               />
               <p className="text-xs text-left max-w-56 text-neutral-400 mt-2">
