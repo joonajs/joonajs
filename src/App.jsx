@@ -23,7 +23,7 @@ useEffect(() => {
 
 
   return (
-    <div className="font-sans font-medium text-black bg-[#fcfcfce6] lg:mb-0 mb-10">
+    <div className="font-sans font-medium text-black bg-[#fcfcfce6] lg:mb-0 mb-10 max-w-[1800px] mx-auto">
       <Navigation />
       <main className="lg:mt-20 p-3 min-w-full left-1/2 -transform-x-1/2 mx-auto max-w-[1920px] overflow-hidden">
         <div className="p-1 border rounded-3xl bg-white">
