@@ -23,10 +23,10 @@ useEffect(() => {
 
 
   return (
-    <div className="font-sans font-medium text-black bg-[#fcfcfce6]">
+    <div className="font-sans font-medium text-black bg-[#fcfcfce6] lg:mb-0 mb-10">
       <Navigation />
-      <main className="mt-20 p-6 min-w-full left-1/2 -transform-x-1/2 mx-auto max-w-[1920px] overflow-hidden">
-        <div className="p-5 border rounded-3xl bg-white">
+      <main className="lg:mt-20 p-3 min-w-full left-1/2 -transform-x-1/2 mx-auto max-w-[1920px] overflow-hidden">
+        <div className="p-1 border rounded-3xl bg-white">
           <div className="grid lg:grid-cols-3 gap-6">
             <div className="lg:col-span-2 px-5 py-5 rounded-3xl">
               <section id="about" className="mb-4 max-w-4xl">
@@ -136,7 +136,7 @@ useEffect(() => {
             </div>
         </div>
 
-        <div className="fixed bottom-0 right-0 p-4">
+        <div className="fixed bottom-0 right-0 p-4 hidden lg:block">
         <button
     className={`bg-white border bg-opacity-90 hover:bg-neutral-100 text-black font-bold p-2 rounded-3xl 
                 transform transition-transform duration-300 ease-out 
