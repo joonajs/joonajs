@@ -95,7 +95,7 @@ useEffect(() => {
         </div>
       </main>
 
-          <footer className=" m-6 rounded-3xl h-fit bg-white border mt-0 px-5 py-5">
+          <footer className=" m-3 rounded-3xl h-fit bg-white border mt-0 px-5 py-5">
                 <p className="text-sm">
                     This website is still hugely a work in progress, so please excuse the mess. I'm currently working on adding more content and improving the design. If you have any feedback or suggestions, feel free to reach out to me via email. I'm trying to add more projects and design work to the site, so stay tuned for updates!
                 </p>
@@ -109,7 +109,7 @@ useEffect(() => {
                 </div>
               </footer>
 
-        <div className="lg:grid lg:grid-cols-6 lg:gap-6 max-w-[1920px] overflow-hidden p-5">
+        <div className="lg:grid lg:grid-cols-6 lg:gap-6 max-w-[1920px] overflow-hidden p-3">
             <div className="lg:col-span-4 space-y-4 lg:mt-0 mt-2 min-w-full">
                 <div className="relative">
                 <img
