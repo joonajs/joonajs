@@ -21,7 +21,7 @@ The Hotel Room Management Application (HRMA) lets users log in, sign up, and boo
 
 ## Design
 
-As much as I love developing software and programming, I also have a passion for design. I have experience in creating user interfaces and user experiences for web applications, mobile applications, and websites. I have a strong understanding of design principles and I always strive to create visually appealing and user-friendly interfaces. You can view my work on <a href="https://www.behance.net/joonajs" className="text-blue-500 hover:underline">Behance</a> as well as <a href="https://www.x.com/joona_js" className="text-blue-500 hover:underline text-xs">X</a>.
+As much as I love developing software and programming, I also have a passion for design. I have experience in creating user interfaces and user experiences for web applications, mobile applications, and websites. I have a strong understanding of design principles and I always strive to create visually appealing and user-friendly interfaces.
 
 ## Contact
 
