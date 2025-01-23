@@ -92,7 +92,7 @@ useEffect(() => {
           <p className="text-sm text-neutral-500 text-center">
             3rd-year IT student passionate about software development, UI/UX, and design.
           </p>
-          <p className="text-sm text-neutral-500 text-center">
+          <p className="text-sm text-neutral-500 text-center mb-1">
            Vaasa, Finland
           </p>
         </div>
