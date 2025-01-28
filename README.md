@@ -1,7 +1,7 @@
 ## About Me
 
 Hey there! My name is Joona, and I'm a 3rd-year Information Technology student at Vaasa University of Applied Sciences, majoring in software development. I'm passionate about everything technology-related, with a strong interest in UI/UX and design as well.
-You should also check out my projects on [GitHub](https://github.com/joonajs) and [GitLab](https://gitlab.com/joonajs). Also my personal site at [joona.studio](https://joona.studio) is live, so feel free to check it out as well! 👷
+You should also check out my projects on [GitHub](https://github.com/joonajs) and [GitLab](https://gitlab.com/joonajs). Also I got my personal site at [joona.studio](https://joona.studio) and [hey.joona.studio](https://hey.joona.studio/) so feel free to check them out as well! 👷
 
 ## Projects
 
